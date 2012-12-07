@@ -109,6 +109,12 @@ Confirm your environment looks correct:
     cd ${IMPALA_HOME}
     ./build_public.sh -build_thirdparty
 
+### Building libhdfs
+
+For some reason this libhdfs is not being built
+
+    cd ${IMPALA_HOME}/thirdparty/hadoop-0.20.2-cdh3u2 ant -Dcompile.c++=true -Dlibhdfs=true compile-c++-libhdfs
+
 ## Wrapping up
 
 After a successful build, there should be an `impalad` binary in `${IMPALA_HOME}/be/build/debug/service`.
