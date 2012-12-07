@@ -32,16 +32,16 @@ add_executable(state-store-service state-store-main.cc)
 
 target_link_libraries(state-store-service ${IMPALA_LINK_LIBS})
 
-add_executable(state-store-test state-store-test.cc)
+#add_executable(state-store-test state-store-test.cc)
 
-target_link_libraries(state-store-test ${IMPALA_TEST_LINK_LIBS})
+# target_link_libraries(state-store-test ${IMPALA_TEST_LINK_LIBS})
 
-add_test(state-store-test ${BUILD_OUTPUT_ROOT_DIRECTORY}/sparrow/state-store-test)
+# add_test(state-store-test ${BUILD_OUTPUT_ROOT_DIRECTORY}/sparrow/state-store-test)
 
-add_executable(simple-scheduler-test simple-scheduler-test.cc)
+# add_executable(simple-scheduler-test simple-scheduler-test.cc)
 
-target_link_libraries(simple-scheduler-test
-  ${IMPALA_TEST_LINK_LIBS}
-)
+# target_link_libraries(simple-scheduler-test
+#   ${IMPALA_TEST_LINK_LIBS}
+# )
 
-add_test(simple-scheduler-test ${BUILD_OUTPUT_ROOT_DIRECTORY}/sparrow/simple-scheduler-test)
+# add_test(simple-scheduler-test ${BUILD_OUTPUT_ROOT_DIRECTORY}/sparrow/simple-scheduler-test)

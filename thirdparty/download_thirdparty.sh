@@ -59,17 +59,18 @@ tar xzf mongoose-${IMPALA_MONGOOSE_VERSION}.tgz
 rm mongoose-${IMPALA_MONGOOSE_VERSION}.tgz
 
 echo "Fetching Apache Hadoop"
-wget http://archive.cloudera.com/cdh4/cdh/4/hadoop-${IMPALA_HADOOP_VERSION}.tar.gz
+wget http://archive.cloudera.com/cdh/3/hadoop-${IMPALA_HADOOP_VERSION}.tar.gz
 tar xzf hadoop-${IMPALA_HADOOP_VERSION}.tar.gz
 rm hadoop-${IMPALA_HADOOP_VERSION}.tar.gz
 
 echo "Fetching Apache Hive"
-wget http://archive.cloudera.com/cdh4/cdh/4/hive-${IMPALA_HIVE_VERSION}.tar.gz
+wget http://archive.cloudera.com/cdh/3/hive-${IMPALA_HIVE_VERSION}.tar.gz
 tar xzf hive-${IMPALA_HIVE_VERSION}.tar.gz
 rm hive-${IMPALA_HIVE_VERSION}.tar.gz
 
 echo "Fetching Apache Thrift"
-wget http://archive.apache.org/dist/thrift/${IMPALA_THRIFT_VERSION}/thrift-${IMPALA_THRIFT_VERSION}.tar.gz
+wget http://archive.apache.org/dist/incubator/thrift/${IMPALA_THRIFT_VERSION}-incubating/thrift-${IMPALA_THRIFT_VERSION}.tar.gz
+#wget http://archive.apache.org/dist/thrift/${IMPALA_THRIFT_VERSION}/thrift-${IMPALA_THRIFT_VERSION}.tar.gz
 tar xzf thrift-${IMPALA_THRIFT_VERSION}.tar.gz
 mkdir python-thrift-${IMPALA_THRIFT_VERSION}
 mv thrift-${IMPALA_THRIFT_VERSION}/lib/py/src python-thrift-${IMPALA_THRIFT_VERSION}/thrift
